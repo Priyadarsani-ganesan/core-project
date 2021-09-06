@@ -1,0 +1,18 @@
+<form [formGroup]="testForm" novalidate autocomplete="off">
+    <h2>Login</h2>
+    <form [formGroup]="testForm" novalidate autocomplete="off">
+    <div class="form-group">
+        <label for="emailCtrl">Email</label>
+        <input id="emailCtrl" type="text" class="form-control" formControlName="emailField" inputmode="email" maxlength="50">
+
+        <aa-lib-error-message formControlName="emailField" key="required">Enter your email address
+        </aa-lib-error-message>
+        <aa-lib-error-message formControlName="emailField" key="pattern">Check your email address</aa-lib-error-message>
+    </div>
+    <div class="mb-5">
+        <button class="btn primary">Next</button>
+    </div>
+    </form>
+    <p>First time logging in? <button class="btn btn-link">Create an account</button></p>
+    <p>This site is protected by reCAPTCHA and the Google <button class="btn btn-link">Privacy Policy</button> and <button class="btn btn-link">Terms of Service</button> apply.</p>
+</form>

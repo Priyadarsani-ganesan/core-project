@@ -1,0 +1,16 @@
+/* Import / use this file in all custom components */
+
+// NOTE: DO NOT USE BOOTSTRAP's grid system. Its not compatible with AA's theme
+// $enable-grid-classes: false;
+
+@import '../node_modules/@theaa/core-lib/core-lib-assets/scss/variables';
+@import '../node_modules/@theaa/core-lib/core-lib-assets/scss/mixins';
+
+$icon-path: '~@theaa/core-lib/core-lib-assets/icons';
+$logo-path: '~@theaa/core-lib/core-lib-assets/logos';
+$image-path: '~@theaa/core-lib/core-lib-assets/images';
+$font-path: '~@theaa/core-lib/core-lib-assets/fonts';
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';

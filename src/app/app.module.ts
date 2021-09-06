@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EmailModule } from "./email/email.module";
+import { AAHeaderModule, AAContainerModule } from "@theaa/core-lib";
 
 @NgModule({
   declarations: [
@@ -10,7 +12,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    EmailModule,
+    AAHeaderModule,
+    AAContainerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
